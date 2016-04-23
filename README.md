@@ -1,4 +1,4 @@
-Ejemplo-PHP
+PuntoPagos PHP-LIB
 ===========
 
-Ejemplo simple en PHP utilizando cURL para realizar el request a PuntoPagos
+Libreria en proceso de construcción basado en el ejemplo de puntopagos
