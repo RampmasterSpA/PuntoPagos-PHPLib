@@ -150,6 +150,22 @@ class PuntoPagos
     }
 
     /**
+     * @param $token
+     * @param $type
+     * @return bool|string
+     */
+    public function generateUrl($token, $type){
+        switch($type){
+            case 'process':
+                return $this->url.'/transaccion/procesar/'.$token;
+            case 'check':
+                return $this->url.'/transaccion/'.$token;
+            default:
+                return false;
+        }
+    }
+
+    /**
      * @param array $parameters arreglo con los elementos a firmar
      * @return string $signature firma encriptada para su uso
      */
